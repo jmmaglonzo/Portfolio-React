@@ -44,20 +44,23 @@ function NavBar() {
   }, []);
 
   return (
-    <header className=" dark:bg-navBar fixed left-0 top-0 w-full bg-light py-4 shadow-lg">
-      <nav className="container relative hidden items-center justify-between md:flex">
+    <header className=" fixed left-0 top-0 w-full bg-light py-2 shadow-lg dark:bg-navBar">
+      <nav
+        className="container relative flex items-center justify-between"
+        ref={menuRef}
+      >
         <div className="flex items-center gap-4 font-bold">
           <FaCode size={32} className="text dark:text-white" />
-          <p className="dark:text-darkRed text-lightBlue text-2xl">
+          <p className=" text-lightBlue dark:text-darkRed md:text-2xl">
             Lon
             <span className="text-darkFont dark:text-white">zo</span>
           </p>
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2">
           <label
             htmlFor="check"
-            className="relative h-6 w-12 cursor-pointer rounded-full bg-cards p-1 shadow-md  duration-300 dark:bg-light"
+            className="relative h-4 w-8 cursor-pointer rounded-full bg-cards p-1 shadow-md duration-300 dark:bg-light  md:h-6 md:w-12"
           >
             <input
               type="checkbox"
@@ -66,23 +69,31 @@ function NavBar() {
               onChange={handleThemeSwitch}
               checked={theme === "dark"}
             />
-            <span className="bg-lightAccent absolute left-[3px] top-[2.2px] h-4/5 w-2/5 rounded-full duration-300 peer-checked:left-[26px] peer-checked:bg-forms"></span>
+            <span
+              className="absolute left-[2px] top-[1.5px] h-4/5 w-2/5 rounded-full bg-lightAccent duration-300 peer-checked:left-[17.5px] peer-checked:bg-forms
+            md:left-[3px] md:top-[2.2px]
+            md:peer-checked:left-[26px]
+            "
+            ></span>
           </label>
           <button
-            className="dark:bg-lightAccent  flex cursor-pointer items-center gap-4 rounded-full bg-cards p-1 pr-4"
+            className="flex  cursor-pointer items-center gap-4 rounded-full bg-cards p-1 pr-4 dark:bg-lightAccent"
             onClick={handleMenu}
           >
-            <img src={profile} alt="JM Profile" className="h-8 w-8" />
-            <span className=" dark:text-darkFont text-lightAccent font-bold">
+            <img
+              src={profile}
+              alt="JM Profile"
+              className="h-7 w-7 md:h-8 md:w-8"
+            />
+            <span className=" text-xs font-bold text-lightAccent dark:text-darkFont md:text-base">
               Menu
             </span>
           </button>
         </div>
         <div
-          ref={menuRef}
-          className={`menu boder text-lightAccent dark:text-darkFont absolute top-14 flex flex-col items-center gap-4 rounded-md border   bg-forms px-8 pb-8 pt-2 shadow-xl duration-300 dark:bg-light md:right-2 md:w-1/4 lg:-right-4 xl:w-1/5 ${menu ? "opacity-100" : "opacity-0"}`}
+          className={`menu boder absolute right-0 top-11 flex flex-col items-center gap-4 rounded-md border bg-forms px-8 pb-8 pt-2 text-lightAccent shadow-xl duration-300 dark:bg-light dark:text-darkFont md:right-2 md:w-1/3 lg:-right-9 lg:w-1/4 xl:w-1/5 ${menu ? "opacity-100" : "opacity-0"}`}
         >
-          <span className="dark:border-b-darkFont border-b-lightAccent border-b-2 font-semibold uppercase">
+          <span className="border-b-2 border-b-lightAccent text-sm font-semibold uppercase dark:border-b-darkFont">
             front-end developer
           </span>
           <ul className="flex flex-col items-center gap-14 text-lg">

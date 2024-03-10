@@ -9,7 +9,7 @@ function Skills() {
       </span>
 
       <div className=" mt-10 hidden overflow-hidden bg-cards py-12 dark:bg-light md:block">
-        <Marquee speed={1} pauseOnHover>
+        <Marquee speed={30} pauseOnHover={true}>
           <div className="logo-slide flex items-center">
             {skillIcons.map((icon, index) => (
               <div className="flex flex-col gap-2" key={index}>

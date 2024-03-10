@@ -20,3 +20,42 @@ export type SkillProps = {
     icon: string;
   };
 };
+
+export const projects = [
+  {
+    id: 9,
+    img: "src/assets/mockups/omnifood.webp",
+    desc: "Omnifood AI, my React and Tailwind Css project. With redesigned and new sections, I've revamped this site to offer a fresh and improved experience.",
+    tech: ["REACT", "TAILWIND-CSS", "TYPESCRIPT"],
+    title: "Omnifood-Ai",
+    github: "https://github.com/jmmaglonzo/Omnifood-Reacts",
+    link: "https://omnifood-react.vercel.app/",
+  },
+  {
+    id: 8,
+    img: "src/assets/mockups/portfolio.webp",
+    desc: "Welcome to my portfolio powered by TypeScript plus React and Tailwind. Discover my responsive projects, explore skills, and let's discuss collaboration possibilities for a modern user experience.",
+    tech: ["REACT", "TAILWIND-CSS", "TYPESCRIPT"],
+    title: "PORTFOLIO",
+    github: "https://github.com/jmmaglonzo/Omnifood-Reacts",
+    link: "https://omnifood-react.vercel.app/",
+  },
+  {
+    id: 7,
+    img: "src/assets/mockups/hj.webp",
+    desc: "Developed using Vue.js for dynamic interactivity, Vue Router for seamless navigation, and Tailwind CSS for a modern, visually appealing design.",
+    tech: ["VUE", "VUE-ROUTER", "TAILWIND-CSS"],
+    title: "HJ LAYOUT & DESIGNS",
+    github: "https://github.com/jmmaglonzo/HJLD",
+    link: "https://hjld.vercel.app/",
+  },
+  {
+    id: 6,
+    img: "src/assets/mockups/clipboard.webp",
+    desc: "My First Tailwind CSS project reflects my learning journey and growth, conquering a Front-End Mentor challenge. Explore evolving web development skills through engaging, responsive designs.",
+    tech: ["HTML", "TAILWIND-CSS"],
+    title: "CLIPBOARD LANDING PAGE",
+    github: "https://github.com/jmmaglonzo/Clipboard-Landing-Page",
+    link: "https://clipboard-landing-page-azure.vercel.app/",
+  },
+];

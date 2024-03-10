@@ -7,13 +7,13 @@ export default {
       colors: {
         backgroundColor: "#101019",
         darkRed: "#fd0037",
-        lightBlue: "#0075F2",
+        lightBlue: "#4f46e5",
         light: "#E2E2E2",
         cards: "#2b2c35",
         forms: "#161925",
         lightAccent: "#D9D9D9",
         navBar: "#13141f",
-        darkFont: "#000411",
+        darkFont: "#0a0a0a",
       },
     },
     container: {
@@ -34,6 +34,7 @@ export default {
     },
     fontFamily: {
       Fira: ["Fira Code", "monospace"],
+      Poppins: ["Poppins", "sans-serif"],
     },
   },
   plugins: [],

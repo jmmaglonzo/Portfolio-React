@@ -1,12 +1,16 @@
 import NavBar from "../UI/NavBar";
+import About from "../components/About";
 import Hero from "../components/Hero";
+import Skills from "../components/Skills";
 
 function Home() {
   return (
     <>
       <NavBar />
-      <main className="container">
+      <main>
         <Hero />
+        <About />
+        <Skills />
       </main>
     </>
   );

@@ -60,7 +60,7 @@ function NavBar() {
   }, []);
 
   return (
-    <header className=" fixed left-0 top-0 w-full bg-light pt-4 dark:bg-backgroundColor">
+    <header className=" fixed left-0 top-0 z-50 w-full bg-light pt-4 dark:bg-backgroundColor">
       <nav
         className="container relative flex items-center justify-between"
         ref={menuRef}

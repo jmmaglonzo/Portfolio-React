@@ -4,5 +4,18 @@
 @tailwind utilities;
 
 body {
-  @apply bg-light font-Poppins duration-200 dark:bg-backgroundColor;
+  @apply bg-light font-Poppins duration-300 dark:bg-backgroundColor;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logo-slide {
+  animation: 60s slide infinite linear;
 }

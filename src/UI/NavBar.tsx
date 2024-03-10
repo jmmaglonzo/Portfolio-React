@@ -1,8 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import profile from "src/assets/profile.png";
 import { FaCode } from "react-icons/fa6";
-import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
-import { SiFrontendmentor } from "react-icons/si";
+import Links from "./Links";
 
 function NavBar() {
   const menuRef = useRef<HTMLDivElement>(null);
@@ -61,7 +60,7 @@ function NavBar() {
   }, []);
 
   return (
-    <header className=" fixed left-0 top-0 w-full py-4  ">
+    <header className=" fixed left-0 top-0 w-full bg-light pt-4 dark:bg-backgroundColor">
       <nav
         className="container relative flex items-center justify-between"
         ref={menuRef}
@@ -70,7 +69,9 @@ function NavBar() {
           <FaCode size={32} className="text dark:text-white" />
           <p className=" text-lightBlue dark:text-darkRed md:text-2xl">
             Lon
-            <span className="text-darkFont dark:text-white">zo</span>
+            <span className="font-semibold text-darkFont dark:text-white">
+              zo
+            </span>
           </p>
         </div>
 
@@ -121,47 +122,15 @@ function NavBar() {
             front-end developer
           </span>
 
-          <div className="hidden gap-4 lg:flex">
-            <a href="https://github.com/jmmaglonzo" target="_blank">
-              <FaGithub className="text-2xl" />
-            </a>
-            <a href="https://www.linkedin.com/in/jmmaglonzo/" target="_blank">
-              <FaLinkedin className="text-2xl" />
-            </a>
-            <a
-              href="https://www.frontendmentor.io/profile/jmmaglonzo"
-              target="_blank"
-            >
-              <SiFrontendmentor className="text-2xl" />
-            </a>
-            <a href="https://twitter.com/iocrpyto" target="_blank">
-              <FaXTwitter className="text-2xl" />
-            </a>
-          </div>
+          <Links socials={`hidden lg:flex`} />
 
-          <ul className="flex flex-col items-center gap-14 text-lg lg:hidden">
+          <ul className="flex flex-col items-center gap-14 text-lg md:pb-4 lg:hidden">
             <li>Home</li>
             <li>Skills</li>
             <li>Projects</li>
             <li>Contact</li>
 
-            <div className="flex gap-4 lg:hidden">
-              <a href="https://github.com/jmmaglonzo" target="_blank">
-                <FaGithub className="text-2xl" />
-              </a>
-              <a href="https://www.linkedin.com/in/jmmaglonzo/" target="_blank">
-                <FaLinkedin className="text-2xl" />
-              </a>
-              <a
-                href="https://www.frontendmentor.io/profile/jmmaglonzo"
-                target="_blank"
-              >
-                <SiFrontendmentor className="text-2xl" />
-              </a>
-              <a href="https://twitter.com/iocrpyto" target="_blank">
-                <FaXTwitter className="text-2xl" />
-              </a>
-            </div>
+            <Links socials={`flex lg:hidden`} />
           </ul>
         </div>
       </nav>

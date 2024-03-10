@@ -4,5 +4,5 @@
 @tailwind utilities;
 
 body {
-  @apply font-Poppins bg-light duration-200 dark:bg-slate-900;
+  @apply bg-light font-Poppins duration-200 dark:bg-backgroundColor;
 }

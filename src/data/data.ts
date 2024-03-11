@@ -1,16 +1,34 @@
+import icon1 from "src/assets/icons/html5.webp";
+import icon2 from "src/assets/icons/html5.webp";
+import icon3 from "src/assets/icons/html5.webp";
+import icon4 from "src/assets/icons/html5.webp";
+import icon5 from "src/assets/icons/html5.webp";
+import icon6 from "src/assets/icons/html5.webp";
+import icon7 from "src/assets/icons/html5.webp";
+import icon8 from "src/assets/icons/html5.webp";
+import icon9 from "src/assets/icons/html5.webp";
+import icon10 from "src/assets/icons/html5.webp";
+import icon11 from "src/assets/icons/html5.webp";
+import icon12 from "src/assets/icons/html5.webp";
+
+import img1 from "src/assets/mockups/omnifood.webp";
+import img2 from "src/assets/mockups/portfolio.webp";
+import img3 from "src/assets/mockups/hj.webp";
+import img4 from "src/assets/mockups/clipboard.webp";
+
 export const skillIcons = [
-  { id: 1, name: "HTML", icon: "src/assets/icons/html5.webp" },
-  { id: 2, name: "CSS", icon: "src/assets/icons/css.webp" },
-  { id: 3, name: "JAVASCRIPT", icon: "src/assets/icons/javascript.webp" },
-  { id: 4, name: "REACT", icon: "src/assets/icons/react.webp" },
-  { id: 5, name: "VUE", icon: "src/assets/icons/vuejs.webp" },
-  { id: 6, name: "TAILWIND-CSS", icon: "src/assets/icons/tailwind.svg" },
-  { id: 7, name: "BOOTSTRAP", icon: "src/assets/icons/bootstrap.webp" },
-  { id: 8, name: "SASS", icon: "src/assets/icons/sass.webp" },
-  { id: 9, name: "VITE", icon: "src/assets/icons/vite.svg" },
-  { id: 10, name: "VS CODE", icon: "src/assets/icons/vscode.webp" },
-  { id: 11, name: "FIGMA", icon: "src/assets/icons/figma.webp" },
-  { id: 12, name: "GIT", icon: "src/assets/icons/git.webp" },
+  { id: 1, name: "HTML", icon: icon1 },
+  { id: 2, name: "CSS", icon: icon2 },
+  { id: 3, name: "JAVASCRIPT", icon: icon3 },
+  { id: 4, name: "REACT", icon: icon4 },
+  { id: 5, name: "VUE", icon: icon5 },
+  { id: 6, name: "TAILWIND-CSS", icon: icon6 },
+  { id: 7, name: "BOOTSTRAP", icon: icon7 },
+  { id: 8, name: "SASS", icon: icon8 },
+  { id: 9, name: "VITE", icon: icon9 },
+  { id: 10, name: "VS CODE", icon: icon10 },
+  { id: 11, name: "FIGMA", icon: icon11 },
+  { id: 12, name: "GIT", icon: icon12 },
 ];
 
 export type SkillProps = {
@@ -24,7 +42,7 @@ export type SkillProps = {
 export const projects = [
   {
     id: 9,
-    img: "src/assets/mockups/omnifood.webp",
+    img: img1,
     desc: "Omnifood AI, my React and Tailwind Css project. With redesigned and new sections, I've revamped this site to offer a fresh and improved experience.",
     tech: ["REACT", "TAILWIND-CSS", "TYPESCRIPT"],
     title: "Omnifood-Ai",
@@ -33,7 +51,7 @@ export const projects = [
   },
   {
     id: 8,
-    img: "src/assets/mockups/portfolio.webp",
+    img: img2,
     desc: "Welcome to my portfolio powered by TypeScript plus React and Tailwind. Discover my responsive projects, explore skills, and let's discuss collaboration possibilities for a modern user experience.",
     tech: ["REACT", "TAILWIND-CSS", "TYPESCRIPT"],
     title: "PORTFOLIO",
@@ -42,7 +60,7 @@ export const projects = [
   },
   {
     id: 7,
-    img: "src/assets/mockups/hj.webp",
+    img: img3,
     desc: "Developed using Vue.js for dynamic interactivity, Vue Router for seamless navigation, and Tailwind CSS for a modern, visually appealing design.",
     tech: ["VUE", "VUE-ROUTER", "TAILWIND-CSS"],
     title: "HJ LAYOUT & DESIGNS",
@@ -51,7 +69,7 @@ export const projects = [
   },
   {
     id: 6,
-    img: "src/assets/mockups/clipboard.webp",
+    img: img4,
     desc: "My First Tailwind CSS project reflects my learning journey and growth, conquering a Front-End Mentor challenge. Explore evolving web development skills through engaging, responsive designs.",
     tech: ["HTML", "TAILWIND-CSS"],
     title: "CLIPBOARD LANDING PAGE",

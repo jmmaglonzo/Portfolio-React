@@ -1,4 +1,4 @@
-import profile from "src/assets/profile.png";
+import profile from "src/assets/profile.webp";
 import { FaArrowRight } from "react-icons/fa6";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";

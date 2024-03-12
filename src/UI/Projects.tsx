@@ -10,16 +10,19 @@ type ProjectProp = {
     github: string;
     link: string;
   };
+  order: boolean;
 };
 
-function Projects({ project }: ProjectProp) {
+function Projects({ project, order }: ProjectProp) {
   const tech = project.tech.map((items, index) => (
     <span key={index}>{items}</span>
   ));
 
   return (
     <div className="container mt-14 flex flex-col gap-10 md:mt-20 md:flex-row md:items-center">
-      <div className="flex flex-col space-y-2">
+      <div
+        className={`cards order-2 flex flex-col space-y-2 ${order ? "md:order-2" : "md:order-1"} `}
+      >
         <span className="text-center font-bold uppercase text-darkFont dark:text-light md:text-left">
           {project.title}
         </span>
@@ -38,9 +41,11 @@ function Projects({ project }: ProjectProp) {
           </a>
         </div>
       </div>
-      <a href={project.link} target="_blank">
-        <img src={project.img} alt={project.title} />
-      </a>
+      <div className={`${order ? "md:order-1" : "md:order-2"}`}>
+        <a href={project.link} target="_blank">
+          <img src={project.img} alt={project.title} />
+        </a>
+      </div>
     </div>
   );
 }

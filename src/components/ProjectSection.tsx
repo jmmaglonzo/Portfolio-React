@@ -9,7 +9,7 @@ function ProjectSection() {
       </span>
       <div className="mt-14 flex flex-col space-y-16 md:gap-10">
         {projects.map((items, index) => (
-          <Projects key={index} project={items} />
+          <Projects key={index} project={items} order={index % 2 === 0} />
         ))}
       </div>
     </section>

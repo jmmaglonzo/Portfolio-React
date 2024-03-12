@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import profile from "src/assets/profile.png";
+import profile from "src/assets/profile.webp";
 import { FaCode } from "react-icons/fa6";
 import Links from "./Links";
 

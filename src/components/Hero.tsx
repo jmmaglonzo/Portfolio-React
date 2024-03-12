@@ -5,7 +5,10 @@ import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 
 function Hero() {
   return (
-    <section className="container mt-36 flex flex-col items-center gap-4 uppercase md:gap-8">
+    <section
+      className="container mt-36 flex flex-col items-center gap-4 uppercase md:gap-8"
+      id="hero"
+    >
       <figure>
         <img
           src={profile}
@@ -17,13 +20,14 @@ function Hero() {
         <h4 className="text-sm  font-semibold text-lightBlue dark:text-darkRed md:text-xl">
           crafting code with creativity
         </h4>
-        <h1 className="text-center text-sm font-bold text-darkFont dark:text-white sm:text-base md:text-lg lg:text-2xl xl:text-3xl">
-          Hello, I'm John Mark, a Self-Taught Front End Developer. I Enjoy
-          Building Apps and Sites with React.JS!
+        <h1 className="text-center text-sm font-bold text-darkFont dark:text-white sm:text-base md:text-lg lg:text-2xl xl:text-4xl  ">
+          Hello, I'm John Mark, a Self-Taught{" "}
+          <span className="text-lightBlue dark:text-darkRed">
+            Front End Developer
+          </span>
+          . I Enjoy Building Apps and Sites with{" "}
+          <span className="text-lightBlue dark:text-darkRed">React.JS!</span>
         </h1>
-        <span className="font-medium text-darkFont dark:text-light">
-          front end developer
-        </span>
       </article>
       <div className="flex flex-col items-center gap-4 md:flex-row">
         <button className="flex items-center gap-2 rounded-full bg-lightBlue px-4 py-2 text-xs font-medium uppercase text-white dark:bg-darkRed md:text-sm ">

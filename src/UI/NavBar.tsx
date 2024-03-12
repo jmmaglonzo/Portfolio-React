@@ -124,6 +124,7 @@ function NavBar() {
 
           <Links socials={`hidden lg:flex`} />
 
+          {/* Mobile links */}
           <ul className="flex flex-col items-center gap-14 text-lg md:pb-4 lg:hidden">
             <li>Home</li>
             <li>Skills</li>

@@ -76,3 +76,22 @@ export const projects = [
     link: "https://clipboard-landing-page-azure.vercel.app/",
   },
 ];
+
+export const navLinks = [
+  {
+    link: "Home",
+    hash: "home",
+  },
+  {
+    link: "Skills",
+    hash: "skills",
+  },
+  {
+    link: "Projects",
+    hash: "project",
+  },
+  {
+    link: "Contact",
+    hash: "contact",
+  },
+];

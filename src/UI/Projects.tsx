@@ -19,20 +19,20 @@ function Projects({ project, order }: ProjectProp) {
   ));
 
   return (
-    <div className="container mt-14 flex flex-col gap-10 md:mt-20 md:flex-row md:items-center">
+    <div className="mt-14 flex flex-col gap-10 text-center md:mt-8 lg:flex-row lg:items-center lg:text-left">
       <div
-        className={` order-2 flex flex-col space-y-2 ${order ? "md:order-2" : "md:order-1"} `}
+        className={` order-2 flex flex-col space-y-2 ${order ? "lg:order-2" : "lg:order-1"} `}
       >
-        <span className="text-center font-bold uppercase text-darkFont dark:text-light md:text-left">
+        <span className=" text-sm font-bold uppercase text-darkFont dark:text-light lg:text-base">
           {project.title}
         </span>
-        <div className="shado flex flex-col items-center space-y-2 rounded-md bg-cards p-4 text-center text-xs leading-relaxed text-white shadow-lg md:text-start md:text-sm">
+        <div className="flex items-center rounded-md bg-cards p-4  text-xs  text-white shadow-lg  md:text-sm">
           {project.desc}
         </div>
-        <div className="flex justify-center gap-2 text-xs text-darkFont dark:text-light md:justify-start">
+        <div className="flex justify-center gap-2 text-xs font-medium text-darkFont dark:text-light lg:justify-start lg:text-sm">
           {tech}
         </div>
-        <div className="flex items-center justify-center space-x-2 text-xl text-darkFont dark:text-light md:justify-start">
+        <div className="flex items-center justify-center space-x-2 text-sm text-darkFont dark:text-light lg:justify-start">
           <a href={project.github} target="_blank">
             <FaGithub />
           </a>
@@ -41,7 +41,9 @@ function Projects({ project, order }: ProjectProp) {
           </a>
         </div>
       </div>
-      <div className={`${order ? "md:order-1" : "md:order-2"}`}>
+      <div
+        className={`${order ? "lg:order-1" : "lg:order-2"} duration-300 md:hover:-translate-y-12`}
+      >
         <a href={project.link} target="_blank">
           <img src={project.img} alt={project.title} />
         </a>

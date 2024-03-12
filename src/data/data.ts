@@ -55,7 +55,7 @@ export const projects = [
     tech: ["REACT", "TAILWIND-CSS", "TYPESCRIPT"],
     title: "PORTFOLIO",
     github: "https://github.com/jmmaglonzo/Omnifood-Reacts",
-    link: "https://omnifood-react.vercel.app/",
+    link: "https://lonzo-react.vercel.app/",
   },
   {
     id: 7,
@@ -80,7 +80,7 @@ export const projects = [
 export const navLinks = [
   {
     link: "Home",
-    hash: "home",
+    hash: "hero",
   },
   {
     link: "Skills",
@@ -88,10 +88,29 @@ export const navLinks = [
   },
   {
     link: "Projects",
-    hash: "project",
+    hash: "projects",
   },
   {
     link: "Contact",
     hash: "contact",
+  },
+];
+
+export const socials = [
+  {
+    links: "https://github.com/jmmaglonzo",
+    iconNames: "FaGitHub",
+  },
+  {
+    links: "https://www.linkedin.com/in/jmmaglonzo/",
+    iconNames: "FaLinkedin",
+  },
+  {
+    links: "https://www.frontendmentor.io/profile/jmmaglonzo",
+    iconNames: "SiFrontendmentor",
+  },
+  {
+    links: "https://twitter.com/iocrpyto",
+    iconNames: "FaXTwitter",
   },
 ];

@@ -1,9 +1,6 @@
 function About() {
   return (
-    <section
-      className="container mx-auto mt-20 space-y-6 text-center text-darkFont dark:text-light lg:w-3/5 lg:py-20"
-      id="about"
-    >
+    <section className="container mx-auto mt-20 space-y-6 text-center text-darkFont dark:text-light lg:w-3/5 lg:py-20">
       <span className="text-xl font-semibold uppercase text-lightBlue dark:text-darkRed">
         about me
       </span>

@@ -6,7 +6,7 @@ import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 function Hero() {
   return (
     <section
-      className="container mt-36 flex flex-col items-center gap-4 uppercase md:gap-8"
+      className="container mt-36 flex scroll-mt-36 flex-col items-center gap-4 uppercase md:gap-8"
       id="hero"
     >
       <figure>

@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import profile from "src/assets/profile.webp";
 import { FaCode } from "react-icons/fa6";
 import Links from "./Links";
+import NavLinks from "./NavLinks";
 
 function NavBar() {
   const menuRef = useRef<HTMLDivElement>(null);
@@ -75,13 +76,8 @@ function NavBar() {
           </p>
         </div>
 
-        <ul className="hidden items-center gap-14 rounded-full bg-slate-900 px-8 py-2 text-lg font-medium text-white dark:bg-light dark:font-semibold dark:text-darkFont lg:flex">
-          <li>Home</li>
-          <li>Skills</li>
-          <li>Projects</li>
-          <li>Contact</li>
-        </ul>
-
+        {/* \expiremtn */}
+        {isSmallScreen ? null : <NavLinks />}
         <div className="flex items-center gap-2">
           <label
             htmlFor="check"
@@ -121,18 +117,10 @@ function NavBar() {
           <span className="border-b-2 border-b-lightAccent text-sm font-semibold uppercase dark:border-b-darkFont">
             front-end developer
           </span>
-
-          <Links socials={`hidden lg:flex`} />
-
+          {isSmallScreen ? null : <Links />}
           {/* Mobile links */}
-          <ul className="flex flex-col items-center gap-14 text-lg md:pb-4 lg:hidden">
-            <li>Home</li>
-            <li>Skills</li>
-            <li>Projects</li>
-            <li>Contact</li>
 
-            <Links socials={`flex lg:hidden`} />
-          </ul>
+          {isSmallScreen ? <NavLinks menu={menu} setMenu={setMenu} /> : null}
         </div>
       </nav>
     </header>

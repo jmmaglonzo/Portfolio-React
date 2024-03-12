@@ -3,6 +3,8 @@ import profile from "src/assets/profile.webp";
 import { FaCode } from "react-icons/fa6";
 import Links from "./Links";
 import NavLinks from "./NavLinks";
+import { PiMoonStars } from "react-icons/pi";
+import { HiOutlineSun } from "react-icons/hi2";
 
 function NavBar() {
   const menuRef = useRef<HTMLDivElement>(null);
@@ -76,27 +78,16 @@ function NavBar() {
           </p>
         </div>
 
-        {/* \expiremtn */}
         {isSmallScreen ? null : <NavLinks />}
-        <div className="flex items-center gap-2">
-          <label
-            htmlFor="check"
-            className="relative h-4 w-8 cursor-pointer rounded-full bg-cards p-1 shadow-md duration-300 dark:bg-light  md:h-6 md:w-12"
-          >
-            <input
-              type="checkbox"
-              className="peer sr-only"
-              id="check"
-              onChange={handleThemeSwitch}
-              checked={theme === "dark"}
-            />
-            <span
-              className="absolute left-[2px] top-[1.5px] h-4/5 w-2/5 rounded-full bg-lightAccent duration-300 peer-checked:left-[17.5px] peer-checked:bg-forms
-            md:left-[3px] md:top-[2.5px]
-            md:peer-checked:left-[26px]
-            "
-            ></span>
-          </label>
+        <div className="flex items-center gap-4">
+          <button onClick={handleThemeSwitch}>
+            {theme === "dark" ? (
+              <PiMoonStars size={30} className="text-light" />
+            ) : (
+              <HiOutlineSun size={30} />
+            )}
+          </button>
+
           <button
             className="flex  cursor-pointer items-center gap-4 rounded-full bg-cards p-1 pr-4 dark:bg-lightAccent"
             onClick={handleMenu}
@@ -118,7 +109,6 @@ function NavBar() {
             front-end developer
           </span>
           {isSmallScreen ? null : <Links />}
-          {/* Mobile links */}
 
           {isSmallScreen ? <NavLinks menu={menu} setMenu={setMenu} /> : null}
         </div>

@@ -48,9 +48,7 @@ function NavLinks({ menu, setMenu }: NavLinksProps) {
           onClick={() => handleClick(link.hash)}
           key={index}
           className={` cursor-pointer text-light dark:text-darkFont ${
-            activeLink === link.hash
-              ? " text-lightBlue dark:text-darkRed"
-              : null
+            activeLink === link.hash ? " text-lightBlue dark:text-darkRed" : ""
           } `}
         >
           {link.link}

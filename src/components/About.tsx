@@ -1,10 +1,10 @@
 function About() {
   return (
-    <section className="container mx-auto mt-20 space-y-6 text-center text-darkFont dark:text-light lg:w-3/5 lg:py-20">
+    <section className="container mx-auto mt-20 space-y-6 text-center text-darkFont dark:text-light lg:w-1/2 lg:py-20">
       <span className="text-xl font-semibold uppercase text-lightBlue dark:text-darkRed">
         about me
       </span>
-      <p className="text-sm lg:text-base ">
+      <p className="about text-sm lg:text-base">
         A self-taught web developer with an electrical technology degree,
         Despite my initial path, I discovered my passion for web development
         through self-learning. Proficient in front-end technologies like

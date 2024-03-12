@@ -21,12 +21,12 @@ function Projects({ project, order }: ProjectProp) {
   return (
     <div className="container mt-14 flex flex-col gap-10 md:mt-20 md:flex-row md:items-center">
       <div
-        className={`cards order-2 flex flex-col space-y-2 ${order ? "md:order-2" : "md:order-1"} `}
+        className={` order-2 flex flex-col space-y-2 ${order ? "md:order-2" : "md:order-1"} `}
       >
         <span className="text-center font-bold uppercase text-darkFont dark:text-light md:text-left">
           {project.title}
         </span>
-        <div className="flex flex-col items-center space-y-2 rounded-md bg-cards p-4 text-center text-xs leading-relaxed text-white shadow-md md:text-start md:text-sm">
+        <div className="shado flex flex-col items-center space-y-2 rounded-md bg-cards p-4 text-center text-xs leading-relaxed text-white shadow-lg md:text-start md:text-sm">
           {project.desc}
         </div>
         <div className="flex justify-center gap-2 text-xs text-darkFont dark:text-light md:justify-start">

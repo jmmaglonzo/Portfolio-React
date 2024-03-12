@@ -30,12 +30,16 @@ function Hero() {
         </h1>
       </article>
       <div className="flex flex-col items-center gap-4 md:flex-row">
-        <button className="flex items-center gap-2 rounded-full bg-lightBlue px-4 py-2 text-xs font-medium uppercase text-white dark:bg-darkRed md:text-sm ">
-          Contact me here <FaArrowRight />
-        </button>
         <a
-          href="#"
-          className="bg- flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-xs font-medium text-light dark:bg-light dark:text-darkFont md:text-sm "
+          className="flex items-center gap-2 rounded-full bg-lightBlue px-4 py-2 text-xs font-medium uppercase text-white duration-300 active:translate-x-1 active:translate-y-1 dark:bg-darkRed md:text-sm "
+          href="mailto:johnmaglonzo@gmail.com "
+        >
+          Contact me here <FaArrowRight />
+        </a>
+        <a
+          href="https://drive.google.com/file/d/1kKsXAIp9QZEiu0YupwosBF7g3Et6w33u/view?usp=sharing"
+          target="_blank"
+          className="flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-xs font-medium text-light duration-300 active:translate-x-1 active:translate-y-1 dark:bg-light dark:text-darkFont md:text-sm "
         >
           <MdOutlineFileDownload className="md:text-xl" />
           Download CV

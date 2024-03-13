@@ -1,3 +1,4 @@
+import { Zoom } from "react-awesome-reveal";
 import Cards from "../UI/Cards";
 import { skillIcons } from "../data/data";
 import Marquee from "react-fast-marquee";
@@ -29,11 +30,12 @@ function Skills() {
           </div>
         </Marquee>
       </div>
-
       <div className="container mt-8 grid  grid-cols-2 gap-4 md:hidden">
-        {skillIcons.map((icon) => (
-          <Cards key={icon.id} images={icon} />
-        ))}
+        <Zoom cascade={true} duration={500} triggerOnce={true}>
+          {skillIcons.map((icon) => (
+            <Cards key={icon.id} images={icon} />
+          ))}
+        </Zoom>
       </div>
     </section>
   );

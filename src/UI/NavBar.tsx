@@ -111,7 +111,7 @@ function NavBar() {
           </Slide>
         </div>
         <div
-          className={`menu boder absolute right-0 top-11 flex flex-col items-center gap-4 rounded-md border bg-forms px-8 pb-8 pt-2 text-lightAccent shadow-xl duration-300 dark:bg-light dark:text-darkFont md:right-2 md:w-1/3 md:pb-4 lg:-right-5 lg:w-1/4 xl:w-1/5 ${menu ? "" : "hidden"}`}
+          className={`menu boder absolute right-0 top-11 flex flex-col items-center gap-4 rounded-md border bg-forms px-8 pb-8 pt-2 text-lightAccent shadow-xl duration-300 dark:bg-light dark:text-darkFont md:right-2 md:w-1/3 md:pb-4 lg:-right-5 lg:w-1/4 xl:w-1/5 ${menu ? null : "hidden"}`}
         >
           <Zoom triggerOnce={true}>
             <span className="border-b-2 border-b-lightAccent text-sm font-semibold uppercase dark:border-b-darkFont">

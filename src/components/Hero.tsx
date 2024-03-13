@@ -31,7 +31,7 @@ function Hero() {
       </article>
       <div className="flex flex-col items-center gap-4 md:flex-row">
         <a
-          className="flex items-center gap-2 rounded-full bg-lightBlue px-4 py-2 text-xs font-medium uppercase text-white duration-300 active:translate-x-1 active:translate-y-1 dark:bg-darkRed md:text-sm "
+          className="flex items-center gap-2 rounded-full bg-lightBlue px-4 py-2 text-xs font-medium uppercase text-white duration-100 hover:-translate-y-1 hover:translate-x-1 active:-translate-x-1 active:translate-y-1 dark:bg-darkRed md:text-sm "
           href="mailto:johnmaglonzo@gmail.com "
         >
           Contact me here <FaArrowRight />
@@ -39,7 +39,7 @@ function Hero() {
         <a
           href="https://drive.google.com/file/d/1kKsXAIp9QZEiu0YupwosBF7g3Et6w33u/view?usp=sharing"
           target="_blank"
-          className="flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-xs font-medium text-light duration-300 active:translate-x-1 active:translate-y-1 dark:bg-light dark:text-darkFont md:text-sm "
+          className="flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-xs font-medium text-light duration-100 hover:-translate-y-1 hover:translate-x-1 active:-translate-x-1 active:translate-y-1 dark:bg-light dark:text-darkFont md:text-sm "
         >
           <MdOutlineFileDownload className="md:text-xl" />
           Download CV

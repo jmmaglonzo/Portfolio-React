@@ -1,6 +1,7 @@
 import { useState, useEffect, Dispatch, SetStateAction } from "react";
 import { navLinks } from "../data/data";
 import Links from "./Links";
+import { Slide } from "react-awesome-reveal";
 type NavLinksProps = {
   setMenu?: Dispatch<SetStateAction<boolean>>;
   menu?: boolean;
@@ -43,19 +44,23 @@ function NavLinks({ menu, setMenu }: NavLinksProps) {
     <ul
       className={`${isMobile ? "flex flex-col items-center gap-14 text-lg font-semibold md:pb-4 lg:hidden" : "hidden items-center gap-14 rounded-full bg-slate-900 px-8 py-2 text-lg font-medium dark:bg-light dark:font-semibold  lg:flex"}`}
     >
-      {navLinks.map((link, index) => (
-        <li
-          onClick={() => handleClick(link.hash)}
-          key={index}
-          className={` cursor-pointer text-light dark:text-darkFont ${
-            activeLink === link.hash ? " text-lightBlue dark:text-darkRed" : ""
-          } `}
-        >
-          {link.link}
-        </li>
-      ))}
+      <Slide direction="down" cascade={true}>
+        {navLinks.map((link, index) => (
+          <li
+            onClick={() => handleClick(link.hash)}
+            key={index}
+            className={` cursor-pointer text-light dark:text-darkFont ${
+              activeLink === link.hash
+                ? " text-lightBlue dark:text-darkRed"
+                : ""
+            } `}
+          >
+            {link.link}
+          </li>
+        ))}
 
-      {isMobile ? <Links /> : null}
+        {isMobile ? <Links /> : null}
+      </Slide>
     </ul>
   );
 }

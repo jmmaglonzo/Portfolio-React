@@ -5,6 +5,7 @@ import Hero from "../components/Hero";
 import PortfolioFooter from "../components/PortfolioFooter";
 import ProjectSection from "../components/ProjectSection";
 import Skills from "../components/Skills";
+import { Fade } from "react-awesome-reveal";
 
 function Home() {
   return (
@@ -12,8 +13,10 @@ function Home() {
       <NavBar />
       <main>
         <Hero />
-        <About />
-        <Skills />
+        <Fade triggerOnce={true}>
+          <About />
+          <Skills />
+        </Fade>
         <ProjectSection />
         <Contact />
       </main>
